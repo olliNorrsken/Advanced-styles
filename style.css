@@ -40,7 +40,6 @@ a{
     left: 0px;
     top: 0px;
     min-width: 272px;
-    min-height: 1024px;
     box-shadow: 16px 0px 52px 0px #0E185033, -2px 0px 4px 0px #454F7E05;
     display: flex;
     flex-direction: column;
