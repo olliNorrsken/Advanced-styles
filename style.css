@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('fonts/TTLakes-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('fonts/TTLakes-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Light';
+    src: url('fonts/TTLakes-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('fonts/TTLakes-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TT Lakes Regular';
+}
+
+a{
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.mobile-menu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    min-width: 272px;
+    min-height: 1024px;
+    box-shadow: 16px 0px 52px 0px #0E185033, -2px 0px 4px 0px #454F7E05;
+    display: flex;
+    flex-direction: column;
+    padding: 18.73px 24px 32px 24px;
+    /*justify-content: space-around;*/
+}
+.mobile-menu-header{
+    display: flex;
+    align-items: center;
+}
+.mobile-menu-header__logo{
+    margin-left: 16.73px;
+}
+.mobile-menu-header__search{
+    margin-left: 78.27px;
+}
+
+/*.active-button{
+    transition-duration: 2s;
+}*/
+.active-button:hover{
+    cursor: pointer;
+    opacity: .5
+}
+
+.mobile-menu-nav{
+    font-family: 'TT Lakes Medium'; 
+    font-size: 16px; 
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    margin-top: 46.27px;
+}
+.mobile-menu-nav__list{
+    list-style: none;
+    padding-left: 0px;
+}
+a.selected-item{
+    color: #7E7E82;
+}
+.mobile-menu-nav__item{
+    margin-bottom: 32px;
+    position: relative;
+}
+.mobile-menu-nav__item:first-child::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    left: -24px;
+    top: -4px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.mobile-menu-footer{
+    margin-top: 268px;
+}
+
+.mobile-menu-footer__buttons{
+    display: flex;
+    gap: 16px;
+}
+.mobile-menu-footer__email{
+    font-family: 'TT Lakes Medium';
+    font-size: 16px; 
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    margin-top: 16px;
+}
+.mobile-menu-footer__phone-number{
+    display: block;
+    font-family: 'TT Lakes Bold';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin-top: 12px;
+}
+.mobile-menu-footer__lang{
+    display: flex;
+    margin-top: 40px;
+}
+.mobile-menu-footer__lang-item:not(:first-child){
+    margin-right: 7px;
+}
