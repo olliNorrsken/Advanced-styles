@@ -45,7 +45,6 @@ a{
     display: flex;
     flex-direction: column;
     padding: 18.73px 24px 32px 24px;
-    /*justify-content: space-around;*/
 }
 .mobile-menu-header{
     display: flex;
@@ -58,9 +57,9 @@ a{
     margin-left: 78.27px;
 }
 
-/*.active-button{
+.active-button{
     transition-duration: 2s;
-}*/
+}
 .active-button:hover{
     cursor: pointer;
     opacity: .5
